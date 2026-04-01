@@ -10,7 +10,7 @@
 
     <script>
         function getData() {
-            fetch("http://127.0.0.1:5000/data")   // send request to Flask
+            fetch("https://test-1sun.onrender.com/data")   // send request to Flask
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("result").innerText = data; // show response
