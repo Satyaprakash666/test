@@ -12,12 +12,12 @@ def home():
 
 @app.route('/page1')
 def f1():
-    return render_template('1.html')
+    return render_template('page1.html')
 
 
 @app.route('/page2')
 def f2():
-    return render_template('2.html')
+    return render_template('page2.html')
 
 
 @app.route('/data')
