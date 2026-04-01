@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Request Example</title>
+</head>
+<body>
+
+    <button onclick="getData()">Get Data 2</button>
+    <p id="result"></p>
+
+    <script>
+        function getData() {
+            fetch("/data")   // send request to Flask
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("result").innerText = data; // show response
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+
+</body>
+</html>
