@@ -22,7 +22,7 @@ def f2():
 
 @app.route('/data')
 def data():
-    return 'hii'
+    return 'hii from simple'
 
 
 if __name__ == '__main__':
